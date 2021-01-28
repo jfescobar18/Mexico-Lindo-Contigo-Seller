@@ -1,0 +1,6 @@
+version: '3.2'
+
+services:
+  seller:
+    environment:
+      - API_URL=http://locahhost:3000/api/
