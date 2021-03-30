@@ -6,6 +6,7 @@ services:
     volumes:
       - .:/usr/src/
       - /usr/src/node_modules/
+    command: npx nodemon --legacy-watch index.js -e js,css
     container_name: mlc-reactjs-seller
     ports:
       - 8000:8000

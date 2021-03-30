@@ -1,4 +1,11 @@
 .login {
+    * {
+        box-sizing: border-box;
+        display: block;
+        &:focus {
+            outline: none;
+        }
+    }
     a {
         color: #92badd;
         display: inline-block;
@@ -167,15 +174,17 @@
             }
         }
     }
-    * {
-        &:focus {
-            outline: none;
-        }
-        box-sizing: border-box;
-    }
     .icon {
         font-size: 100px;
         color: $Main;
+    }
+    small {
+        display: none;
+        color: $Error;
+        margin-bottom: 25px;
+        &.active {
+            display: block;
+        }
     }
 
     @-webkit-keyframes fadeInDown {
